@@ -38,17 +38,22 @@
   outline: none;
 }
 
-.inputComponent > button {
+.inputComponent > div {
+  gap: 4px;
+  display: flex;
+}
+
+.inputComponent > div > button {
   border: none;
   background-color: white;
 }
 
-.inputComponent > button:hover {
+.inputComponent > div > button:hover {
   cursor: pointer;
   background-color: rgb(240, 240, 240)
 }
 
-.inputComponent > button > img {
+.inputComponent > div > button > img {
   /** why is this not working? **/
   fill: royalblue;
 }
