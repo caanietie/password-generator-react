@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.passwordGenerator {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 640px) {
+  .passwordGenerator {
+    padding: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerComponent {
+  width: 100%;
+  margin: 5px auto;
+  color: royalblue;
+  text-align: center;
+  border-bottom: 2px solid lightgrey;
+}
+
+.inputComponent {
+  display: flex;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  align-items: center;
+  gap: calc(10% - 25px);
+  border: 2px solid lightgrey;
+}
+
+.inputComponent > input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  padding: 8px 10px;
+}
+
+.inputComponent > input:focus {
+  outline: none;
+}
+
+.inputComponent > button {
+  border: none;
+  background-color: white;
+}
+
+.inputComponent > button:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240)
+}
+
+.inputComponent > button > img {
+  /** why is this not working? **/
+  fill: royalblue;
+}
+
+.strengthComponent {
+  margin: 20px auto;
+  border: 2px solid lightgrey;
+}
+
+.lengthComponent > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lengthComponent > div:first-child {
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: bolder;
+}
+
+.lengthComponent > div:last-child {
+  font-size: 25px;
+  margin: 20px 0px;
+  font-weight: bolder;
+}
+
+.lengthComponent > input {
+  width: 100%;
+}
+
+.settingsComponent {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.settingsComponent > label {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.settingsComponent > div {
+  gap: 5%;
+  display: flex;
+  margin: 10px 0;
+}
+
+.settingsComponent > div > div {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.settingsComponent > div > div > div {
+  margin-bottom: 5px;
+}
+
+.settingsComponent > div > div > div > label {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.buttonComponent > button {
+  width: 100%;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 18px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  background-color: royalblue;
 }
