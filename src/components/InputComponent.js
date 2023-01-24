@@ -7,7 +7,7 @@ export default function InputComponent(props) {
   const [showPassword, setShowPassword] = useState(false);
   const { generatedPassword, copyGeneratedPassword } = props;
   const [alt, src, val] = showPassword ?
-    ["show password", eyeAllowed, "＊".repeat(generatedPassword.length)] :
+    ["show password", eyeAllowed, "∗".repeat(generatedPassword.length)] :
     ["hide password", eyeBlocked, generatedPassword];
   return (
     <div className="inputComponent" data-testid="inputComponent">
